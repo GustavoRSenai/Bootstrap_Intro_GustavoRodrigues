@@ -28,7 +28,9 @@ label{
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.701);
 }
 #bot{
-    border: solid 5px rgba(128, 128, 128, 0.516);
     background-color: #404040;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.484);
+}
+.custom-div{
+    margin-top: 40px;
 }
