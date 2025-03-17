@@ -30,7 +30,13 @@ label{
 #bot{
     background-color: #404040;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.484);
+    border: none;
 }
 .custom-div{
     margin-top: 40px;
+}
+#bot:hover{
+    background-color: #22403A;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.484);
+    transition: 2s;
 }
