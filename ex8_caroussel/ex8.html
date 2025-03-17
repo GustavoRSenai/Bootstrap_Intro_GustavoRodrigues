@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel Bootstrap</title>
+    <title>Carossel Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<style>
+    .img-custom{
+        height: 550px;
+        width: 900px;
+    }
+    .fundo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
 <body>
-
+    <div class="container bg-dark p-3 fundo">
+        <div class="carousel slide " id="carouselExample" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSn_oifHSh7W2Ilh9uy5DfQd9yArb34BWcXg&s" alt="img1" class="d-block img-custom"></div>
+                <div class="carousel-item"><img src="https://www.estadao.com.br/resizer/v2/YVGPMIIVG5DEVO2WAHQMFO53UY.jpg?quality=80&auth=2e3f2cdb6510f4c17dbfe9503a2c448052288188e59005019ea34dc3515957ff&width=380" alt="img2" class="d-block img-custom"></div>
+                <div class="carousel-item"><img src="https://cdn-3.motorsport.com/images/amp/6b7GLLr0/s1000/gabriel-bortoleto-kick-sauber.jpg" alt="img3" class="d-block img-custom"></div>
+            </div>
+        </div>
+        <button  class="carousel-control-prev antes" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button  class="carousel-control-next depois" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
 
     <!-- 1ª Digitação (Aqui) -->
 
