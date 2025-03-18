@@ -3,8 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Elementos dos Alerts
     const successAlert = document.getElementById('successAlert');
     const errorAlert = document.getElementById('errorAlert');
+    const lightAlert = document.getElementById('lightAlert');
     const showSuccessBtn = document.getElementById('showSuccessBtn');
     const showErrorBtn = document.getElementById('showErrorBtn');
+    const showLightBtn = document.getElementById('showLightBtn');
 
     // Elementos do Toast
     const toastElement = document.getElementById('liveToast');
@@ -19,13 +21,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Funções para os Alerts
     showSuccessBtn.addEventListener('click', () => {
-        errorAlert.classList.remove('show');
         successAlert.classList.add('show');
+        errorAlert.classList.remove('show');
+        lightAlert.classList.remove('show');
+        
     });
 
     showErrorBtn.addEventListener('click', () => {
         successAlert.classList.remove('show');
+        lightAlert.classList.remove('show');
         errorAlert.classList.add('show');
+    });
+
+    showLightBtn.addEventListener('click', () => {
+        successAlert.classList.remove('show');
+        errorAlert.classList.remove('show');
+        lightAlert.classList.add('show');
     });
 
     // Função para o Toast
