@@ -18,26 +18,29 @@
             <button class="btn btn-success me-3" id="showErrorBtn">
                 <i class="bi bi-bug"> </i>Mostrar alerta de Erro!
             </button>
+            <button class="btn btn-dark me-3" id="showLightBtn">
+                <i class="bi bi-lightbulb"> </i>Mostrar o que eu quiser!
+            </button>
             <button class="btn btn-secondary me-3" id="showToastBtn">
                 <i class="bi bi-globe-asia-australia"> </i>Mostrar alerta Toast!
             </button>
-            <button class="btn btn-dark me-3" id="showLightBtn">
-                <i class="bi bi-lightbulb"> </i>Mostrar o que eu quiser!
+            <button class="btn btn-secondary me-3 mt-2" id="showToastBtn2">
+                <i class="bi bi-globe-asia-australia"> </i>Mostrar alerta Toast!
             </button>
         </div>
 
         <!-- Alerta de sucesso -->
         <div class="alert alert-success alert-dimissible fade" id="successAlert">
             <p><strong>Parabéns! </strong>Alerta realizado com sucesso!</p>
-            <button type="button" class="btn-close" data-ds-dismiss="alert"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
         <div class="alert alert-danger alert-dimissible fade" id="errorAlert">
             <p><strong>Oh não! </strong>Alerta de ERRO!</p>
-            <button type="button" class="btn-close" data-ds-dismiss="alert"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
         <div class="alert alert-light alert-dimissible fade" id="lightAlert">
             <p><strong>Luz! </strong>Alumeia tudo aqui!</p>
-            <button type="button"class="btn-close" data-ds-dismiss="alert"></button>
+            <button type="button"class="btn-close" data-bs-dismiss="alert"></button>
         </div>
         <div class="position-fixed top-0 end-0 p-3">
             <div class="toast" id="liveToast" aria-live="assertive" aria-atomic="true" role="alert">
@@ -48,12 +51,12 @@
                     Sua torrada chegou pegue rápido antes que suma!
                 </div>
                 <div class="toast-footer">
-                    <button type="button" class="btn btn-close" data-ds-dismiss="toast"></button>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="toast"></button>
                 </div>
             </div>
         </div>
-        <div class="position-fixed top-0 start-0 p-3">
-            <div class="toast" id="liveToast" aria-live="assertive" aria-atomic="true" role="alert">
+        <div class="position-fixed top-0 p-3">
+            <div class="toast" id="liveToast2" aria-live="assertive" aria-atomic="true" role="alert">
                 <div class="toast-header">
                     Torrada
                 </div>
@@ -61,9 +64,22 @@
                     Sua torrada chegou pegue rápido antes que suma!
                 </div>
                 <div class="toast-footer">
-                    <button type="button" class="btn btn-close" data-ds-dismiss="toast"></button>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="toast"></button>
                 </div>
             </div>
+        </div>
+
+        <!-- Barra de progresso -->
+        <h3 class="mt-4">Barra de progresso:</h3>
+        <div class="progress mb-3" >
+            <div class="progress-bar progress-bar-striped progress-bar-animated  bg-warning" id="dynamicProgress" role="progressbar" style="width: 0%;">
+                    0%
+            </div>
+        </div>
+        <!-- Controle da barra de progresso -->
+        <div class="btn-group">
+            <button class="btn btn-danger" id="decreaseBtn">-10%</button>
+            <button class="btn btn-primary" id="increaseBtn">+10%</button>
         </div>
 
     </div>

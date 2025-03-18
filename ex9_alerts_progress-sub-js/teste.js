@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const toastElement = document.getElementById('liveToast');
     const toast = new bootstrap.Toast(toastElement);
     const showToastBtn = document.getElementById('showToastBtn');
+    const toastElement2 = document.getElementById('liveToast2');
+    const toast2 = new bootstrap.Toast(toastElement2);
+    const showToastBtn2 = document.getElementById('showToastBtn2');
 
     // Elementos da Progress Bar
     const progressBar = document.getElementById('dynamicProgress');
@@ -42,6 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Função para o Toast
     showToastBtn.addEventListener('click', () => {
         toast.show();
+    });
+    // Função para o Toast
+    showToastBtn2.addEventListener('click', () => {
+        toast2.show();
     });
 
     // Funções para Progress Bar
